@@ -1,4 +1,6 @@
-=== cl.zip archive listing ===
+=== UPLOADED ARCHIVE CONTENTS ===
+
+### cl.zip
 Archive:  cl.zip
   Length      Date    Time    Name
 ---------  ---------- -----   ----
@@ -9,11 +11,664 @@ Archive:  cl.zip
 ---------                     -------
   6081140                     4 files
 
-=== cl.zip file types ===
-cl-unpacked/classes4.dex: Dalvik dex file version 035
-cl-unpacked/classes2.dex: Dalvik dex file version 035
-cl-unpacked/classes3.dex: Dalvik dex file version 035
-cl-unpacked/classes.dex:  Dalvik dex file version 035
+### sdr.zip
+Archive:  sdr.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-11-18 03:06   scripts/
+        0  2026-11-18 03:06   dialogue/
+    57948  2026-02-03 20:29   resources.arsc
+        1  2026-02-03 20:29   scripts/Main.cs
+        0  2026-11-18 03:06   scripts/Screens/
+        1  2026-02-03 20:29   scripts/Hint.cs
+        0  2026-11-18 03:06   scripts/Cooking/
+        0  2026-11-18 03:06   scripts/NightSequence/
+        1  2026-02-03 20:29   scripts/Cutscenes.cs
+        1  2026-02-03 20:29   scripts/QueueFreeOnAndroid.cs
+        0  2026-11-18 03:06   scripts/Effects/
+        0  2026-11-18 03:06   scripts/Translations/
+        1  2026-02-03 20:29   scripts/Randomizer.cs
+        1  2026-02-03 20:29   scripts/DisableShader.cs
+        0  2026-11-18 03:06   scripts/Browsers/
+        0  2026-11-18 03:06   scripts/Visual/
+        0  2026-11-18 03:06   scripts/State/
+        1  2026-02-03 20:29   scripts/Decorations.cs
+        1  2026-02-03 20:29   scripts/PointDescription.cs
+        0  2026-11-18 03:06   scripts/Audio/
+        1  2026-02-03 20:29   scripts/Cursor.cs
+        1  2026-02-03 20:29   scripts/Bodies.cs
+        1  2026-02-03 20:29   scripts/Gallery.cs
+        1  2026-02-03 20:29   scripts/Bitmask.cs
+        1  2026-02-03 20:29   scripts/Calendar.cs
+        1  2026-02-03 20:29   scripts/ButtonHint.cs
+        1  2026-02-03 20:29   scripts/GalleryButton.cs
+        1  2026-02-03 20:29   scripts/BonusManager.cs
+        1  2026-02-03 20:29   scripts/Finishes.cs
+        1  2026-02-03 20:29   scripts/EditorOnly.cs
+        1  2026-02-03 20:29   scripts/Body.cs
+        1  2026-02-03 20:29   scripts/Version.cs
+        1  2026-02-03 20:29   scripts/TimerNight.cs
+        1  2026-02-03 20:29   scripts/Window.cs
+        1  2026-02-03 20:29   scripts/Weather.cs
+        1  2026-02-03 20:29   scripts/StaminaTracker.cs
+        1  2026-02-03 20:29   scripts/XRay.cs
+        1  2026-02-03 20:29   scripts/VolumeAdjustor.cs
+        1  2026-02-03 20:29   scripts/TranslateButton.cs
+        1  2026-02-03 20:29   scripts/UpgradeCameraButton.cs
+        1  2026-02-03 20:29   scripts/TranslateLabel.cs
+        0  2026-11-18 03:06   dialogue/custom_styles/
+        0  2026-11-18 03:06   dialogue/characters/
+        0  2026-11-18 03:06   dialogue/timelines/
+        1  2026-02-03 20:29   scripts/Screens/SummaryScreenUI.cs
+     1284  2026-02-03 20:29   scripts/Screens/Cutscene.gdc
+        1  2026-02-03 20:29   scripts/Screens/MainMenuUI.cs
+        1  2026-02-03 20:29   scripts/Screens/TransitionUI.cs
+        1  2026-02-03 20:29   scripts/Screens/SettingsUI.cs
+       51  2026-02-03 20:29   scripts/Screens/Cutscene.gd.remap
+        1  2026-02-03 20:29   scripts/Screens/Cutscene.cs
+       58  2026-02-03 20:29   scripts/Screens/CutsceneEffects.gd.remap
+        1  2026-02-03 20:29   scripts/Screens/Cursors.cs
+        1  2026-02-03 20:29   scripts/Screens/UpgradeScreenUI.cs
+     1278  2026-02-03 20:29   scripts/Screens/CutsceneEffects.gdc
+        1  2026-02-03 20:29   scripts/Cooking/PortraitYuna.cs
+        1  2026-02-03 20:29   scripts/Cooking/RecipeBox.cs
+        1  2026-02-03 20:29   scripts/Cooking/Rating.cs
+        1  2026-02-03 20:29   scripts/Cooking/Portrait.cs
+        1  2026-02-03 20:29   scripts/Cooking/Oven.cs
+        1  2026-02-03 20:29   scripts/Cooking/Sink.cs
+        1  2026-02-03 20:29   scripts/Cooking/TimerKitchen.cs
+        1  2026-02-03 20:29   scripts/Cooking/Stove.cs
+        1  2026-02-03 20:29   scripts/Cooking/Serving.cs
+        1  2026-02-03 20:29   scripts/Cooking/Shelf.cs
+        1  2026-02-03 20:29   scripts/Cooking/Recipes.cs
+        1  2026-02-03 20:29   scripts/Cooking/Garbage.cs
+        1  2026-02-03 20:29   scripts/Cooking/GratableIngredient.cs
+        1  2026-02-03 20:29   scripts/Cooking/Fridge.cs
+        1  2026-02-03 20:29   scripts/Cooking/Ingredient.cs
+        1  2026-02-03 20:29   scripts/Cooking/KnifeSet.cs
+        1  2026-02-03 20:29   scripts/Cooking/Implement.cs
+        1  2026-02-03 20:29   scripts/Cooking/CuttableIngredient.cs
+        1  2026-02-03 20:29   scripts/Cooking/Dish.cs
+        1  2026-02-03 20:29   scripts/Cooking/CuttingBoard.cs
+        1  2026-02-03 20:29   scripts/Cooking/Cooking.cs
+        1  2026-02-03 20:29   scripts/Cooking/Blender_Top.cs
+        1  2026-02-03 20:29   scripts/NightSequence/EventManager.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Box.cs
+        1  2026-02-03 20:29   scripts/NightSequence/NightSequence.cs
+        0  2026-11-18 03:06   scripts/NightSequence/Interactions/
+        1  2026-02-03 20:29   scripts/NightSequence/BuildupTracker.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Cabinet.cs
+        0  2026-11-18 03:06   scripts/NightSequence/Minigames/
+        1  2026-02-03 20:29   scripts/NightSequence/BoxItem.cs
+        0  2026-11-18 03:06   scripts/NightSequence/AreaListeners/
+        1  2026-02-03 20:29   scripts/NightSequence/PleasureTracker.cs
+        1  2026-02-03 20:29   scripts/NightSequence/SantaHat.cs
+        1  2026-02-03 20:29   scripts/NightSequence/WakefulnessTracker.cs
+        1  2026-02-03 20:29   scripts/Effects/HoverGlow.cs
+        1  2026-02-03 20:29   scripts/Effects/HoverSound.cs
+        1  2026-02-03 20:29   scripts/Effects/HoverBackground.cs
+        1  2026-02-03 20:29   scripts/Effects/HoverOpacity.cs
+        1  2026-02-03 20:29   scripts/Effects/ClickVisible.cs
+        1  2026-02-03 20:29   scripts/Effects/Exit.cs
+        1  2026-02-03 20:29   scripts/Effects/ClickSound.cs
+        1  2026-02-03 20:29   scripts/Effects/ClickInvisible.cs
+        1  2026-02-03 20:29   scripts/Translations/TranslateLineEdit.cs
+        1  2026-02-03 20:29   scripts/Translations/TranslateLinkButton.cs
+        1  2026-02-03 20:29   scripts/Translations/TranslateCheckbox.cs
+        1  2026-02-03 20:29   scripts/Browsers/Statistics.cs
+        1  2026-02-03 20:29   scripts/Browsers/PeepTube.cs
+        1  2026-02-03 20:29   scripts/Browsers/Statistic.cs
+        1  2026-02-03 20:29   scripts/Browsers/Shop.cs
+        1  2026-02-03 20:29   scripts/Browsers/StatusEffects.cs
+        1  2026-02-03 20:29   scripts/Browsers/Popup.cs
+        1  2026-02-03 20:29   scripts/Browsers/Upgrades.cs
+        1  2026-02-03 20:29   scripts/Browsers/Items.cs
+        1  2026-02-03 20:29   scripts/Browsers/StatisticSocial.cs
+        1  2026-02-03 20:29   scripts/Browsers/DisplayItem.cs
+        1  2026-02-03 20:29   scripts/Visual/VHS.cs
+        1  2026-02-03 20:29   scripts/Visual/Doorlight.cs
+        1  2026-02-03 20:29   scripts/Visual/Lighting.cs
+        1  2026-02-03 20:29   scripts/Visual/HotAir.cs
+        1  2026-02-03 20:29   scripts/Visual/Camera.cs
+     1509  2026-02-03 20:29   scripts/Visual/Warp.gdshader
+        1  2026-02-03 20:29   scripts/Visual/Warp.cs
+      557  2026-02-03 20:29   scripts/State/cutscene.gdc
+       49  2026-02-03 20:29   scripts/State/cutscene.gd.remap
+    17420  2026-02-03 20:29   scripts/State/BattleVariables.gdc
+       55  2026-02-03 20:29   scripts/State/game_variables.gd.remap
+       56  2026-02-03 20:29   scripts/State/BattleVariables.gd.remap
+        1  2026-02-03 20:29   scripts/State/SaveTape.cs
+        1  2026-02-03 20:29   scripts/State/SaveManager.cs
+        1  2026-02-03 20:29   scripts/State/SaveUI.cs
+        1  2026-02-03 20:29   scripts/State/StateVariables.cs
+        1  2026-02-03 20:29   scripts/State/Settings.cs
+    10446  2026-02-03 20:29   scripts/State/game_variables.gdc
+        1  2026-02-03 20:29   scripts/Audio/AudioNightSequence.cs
+        1  2026-02-03 20:29   scripts/Audio/Audio.cs
+      121  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_decorations.tscn.remap
+      461  2026-02-03 20:29   dialogue/custom_styles/yosuke_animation_player.gdc
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_dildo.tscn.remap
+       99  2026-02-03 20:29   dialogue/custom_styles/Battle.tres.remap
+      113  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_dad.tscn.remap
+      664  2026-02-03 20:29   dialogue/custom_styles/yuna_animation_player.gdc
+      117  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_enemy_2.tscn.remap
+      900  2026-02-03 20:29   dialogue/custom_styles/slides.gdc
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_friend.tscn.remap
+        1  2026-02-03 20:29   dialogue/custom_styles/yosuke_animation_player.cs
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_enemy.tscn.remap
+      535  2026-02-03 20:29   dialogue/custom_styles/skill_sound.gdc
+       72  2026-02-03 20:29   dialogue/custom_styles/enemy_animation_player.gd.remap
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_camera.tscn.remap
+       62  2026-02-03 20:29   dialogue/custom_styles/enemy_sprite.gd.remap
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_crowd.tscn.remap
+       68  2026-02-03 20:29   dialogue/custom_styles/enemy_sound_player.gd.remap
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_chest.tscn.remap
+       73  2026-02-03 20:29   dialogue/custom_styles/custom_layered_portrait.gd.remap
+      113  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_box.tscn.remap
+      105  2026-02-03 20:29   dialogue/custom_styles/DefaultStyle.tres.remap
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_alice.tscn.remap
+      104  2026-02-03 20:29   dialogue/custom_styles/BattleStyle.tres.remap
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_yosuke.tscn.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/VisualNovelTextbox/
+       61  2026-02-03 20:29   dialogue/custom_styles/skill_sound.gd.remap
+      137  2026-02-03 20:29   dialogue/custom_styles/custom_layered_portrait.gdc
+      113  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_syn.tscn.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/SimpleTextInputBox/
+      846  2026-02-03 20:29   dialogue/custom_styles/enemy_sound_player.gdc
+       73  2026-02-03 20:29   dialogue/custom_styles/yosuke_animation_player.gd.remap
+      521  2026-02-03 20:29   dialogue/custom_styles/enemy_sprite.gdc
+       71  2026-02-03 20:29   dialogue/custom_styles/yuna_animation_player.gd.remap
+      898  2026-02-03 20:29   dialogue/custom_styles/enemy_animation_player.gdc
+       56  2026-02-03 20:29   dialogue/custom_styles/slides.gd.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/CenteredChoices/
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_random.tscn.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/FullBackground/
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_steam.tscn.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/CustomDefaultStyle/
+        0  2026-11-18 03:06   dialogue/custom_styles/Battle/
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_sister.tscn.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/5Portraits/
+      113  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_mom.tscn.remap
+      116  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_letter.tscn.remap
+      115  2026-02-03 20:29   dialogue/custom_styles/layered_portrait_phone.tscn.remap
+      421  2026-02-03 20:29   dialogue/characters/protagonist.dch
+      622  2026-02-03 20:29   dialogue/characters/enemy.dch
+      631  2026-02-03 20:29   dialogue/characters/roommate.dch
+       58  2026-02-03 20:29   dialogue/characters/frame_sound.gd.remap
+      577  2026-02-03 20:29   dialogue/characters/decorations.dch
+      595  2026-02-03 20:29   dialogue/characters/random.dch
+       71  2026-02-03 20:29   dialogue/characters/portrait_animated_sprite.gd.remap
+      813  2026-02-03 20:29   dialogue/characters/frame_sound.gdc
+      115  2026-02-03 20:29   dialogue/characters/layered_portrait_scene.tscn.remap
+      594  2026-02-03 20:29   dialogue/characters/friend.dch
+      482  2026-02-03 20:29   dialogue/characters/portrait_animated_sprite.gdc
+      795  2026-02-03 20:29   dialogue/characters/manager.dch
+      623  2026-02-03 20:29   dialogue/characters/enemy_2.dch
+      615  2026-02-03 20:29   dialogue/characters/syn.dch
+      572  2026-02-03 20:29   dialogue/characters/chest.dch
+      388  2026-02-03 20:29   dialogue/characters/camera.dch
+      137  2026-02-03 20:29   dialogue/characters/custom_layered_portrait.gdc
+       70  2026-02-03 20:29   dialogue/characters/custom_layered_portrait.gd.remap
+      573  2026-02-03 20:29   dialogue/characters/alice.dch
+      572  2026-02-03 20:29   dialogue/characters/crowd.dch
+      569  2026-02-03 20:29   dialogue/characters/scene.dch
+     1743  2026-02-03 20:29   dialogue/timelines/night.dtl
+     2583  2026-02-03 20:29   dialogue/timelines/event_relationship_20.dtl
+     9398  2026-02-03 20:29   dialogue/timelines/night_living_room.dtl
+     6289  2026-02-03 20:29   dialogue/timelines/event_relationship_60.dtl
+     7888  2026-02-03 20:29   dialogue/timelines/morning_tv.dtl
+     6718  2026-02-03 20:29   dialogue/timelines/event_relationship_40.dtl
+     5249  2026-02-03 20:29   dialogue/timelines/party_ending.dtl
+    15779  2026-02-03 20:29   dialogue/timelines/class.dtl
+     6281  2026-02-03 20:29   dialogue/timelines/party_event_afternoon_cop.dtl
+      419  2026-02-03 20:29   dialogue/timelines/ending.dtl
+     3985  2026-02-03 20:29   dialogue/timelines/party_checkpoints.dtl
+     7002  2026-02-03 20:29   dialogue/timelines/adventure_skills.dtl
+     9891  2026-02-03 20:29   dialogue/timelines/night_yosuke.dtl
+     4025  2026-02-03 20:29   dialogue/timelines/event_rewind_final.dtl
+     9051  2026-02-03 20:29   dialogue/timelines/event_rewind.dtl
+     5503  2026-02-03 20:29   dialogue/timelines/morning_mini_unlockdoor.dtl
+     6119  2026-02-03 20:29   dialogue/timelines/kitchen.dtl
+     3227  2026-02-03 20:29   dialogue/timelines/morning_study.dtl
+    12239  2026-02-03 20:29   dialogue/timelines/intro.dtl
+    24760  2026-02-03 20:29   dialogue/timelines/morning_shower.dtl
+    13639  2026-02-03 20:29   dialogue/timelines/event_relationship_100.dtl
+     4141  2026-02-03 20:29   dialogue/timelines/morning_mini_avoidkan.dtl
+     2197  2026-02-03 20:29   dialogue/timelines/event_rent.dtl
+     4737  2026-02-03 20:29   dialogue/timelines/morning_mini_meetfriend.dtl
+    17788  2026-02-03 20:29   dialogue/timelines/event_relationship_80.dtl
+     3540  2026-02-03 20:29   dialogue/timelines/morning.dtl
+     3493  2026-02-03 20:29   dialogue/timelines/adventure_event.dtl
+    16670  2026-02-03 20:29   dialogue/timelines/adventure_functions.dtl
+     1339  2026-02-03 20:29   dialogue/timelines/adventure_checkpoint_level_3.dtl
+     5802  2026-02-03 20:29   dialogue/timelines/party_event_morning_shots.dtl
+     5526  2026-02-03 20:29   dialogue/timelines/adventure_shop_level_1.dtl
+     6538  2026-02-03 20:29   dialogue/timelines/party_intro.dtl
+     3933  2026-02-03 20:29   dialogue/timelines/adventure_shop_level_2.dtl
+     2146  2026-02-03 20:29   dialogue/timelines/adventure_sex.dtl
+     6460  2026-02-03 20:29   dialogue/timelines/party_event_morning_pizza.dtl
+      625  2026-02-03 20:29   dialogue/timelines/yosuke.dch
+     5386  2026-02-03 20:29   dialogue/timelines/adventure_calculations.dtl
+      608  2026-02-03 20:29   dialogue/timelines/z_functions.dtl
+     5201  2026-02-03 20:29   dialogue/timelines/adventure_checkpoint_level_2.dtl
+     6848  2026-02-03 20:29   dialogue/timelines/stat_change.dtl
+     4972  2026-02-03 20:29   dialogue/timelines/adventure_checkpoint_level_1.dtl
+    11598  2026-02-03 20:29   dialogue/timelines/sounds.dtl
+     3910  2026-02-03 20:29   dialogue/timelines/adventure_backgrounds.dtl
+     6965  2026-02-03 20:29   dialogue/timelines/adventure.dtl
+     4784  2026-02-03 20:29   dialogue/timelines/adventure_battle.dtl
+     3985  2026-02-03 20:29   dialogue/timelines/party_event_afternoon_twister.dtl
+     4271  2026-02-03 20:29   dialogue/timelines/party_event_morning_alcohol.dtl
+     6681  2026-02-03 20:29   dialogue/timelines/party_event_evening_beer_pong.dtl
+    11187  2026-02-03 20:29   dialogue/timelines/party_event_evening_strip_games.dtl
+    15372  2026-02-03 20:29   dialogue/timelines/party_event_evening_kan_room.dtl
+     5761  2026-02-03 20:29   dialogue/timelines/party_event_afternoon_punch.dtl
+        1  2026-02-03 20:29   scripts/NightSequence/Interactions/InteractionDisabler.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Interactions/InteractionManager.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Interactions/InteractionCancel.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Interactions/Interaction.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Phone.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/FlyBody.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Plush.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Fly.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Tissues.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Minigames.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/FlySwatter.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Tracing.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/FlySpray.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Door.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Dialogue.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Cleanup.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Thermostat.cs
+        1  2026-02-03 20:29   scripts/NightSequence/Minigames/Timing.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/LegsHandListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/EyebrowsListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/MouthListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/EyebrowsSideListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/LegsListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/CrownListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/Kaede.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/FaceListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/LeftArmListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/HairFrontListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/HeadListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/EyesSideListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/EyesListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/RightArmListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/PositionListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/BraListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/NippleLeftListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/TorsoListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/CrotchListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/TopListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/BedsheetsListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/ChestListener.cs
+        0  2026-11-18 03:06   scripts/NightSequence/AreaListeners/Decorations/
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/BodyAnimation.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/NippleRightListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/PantiesListener.cs
+      120  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn.remap
+      193  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/next.svg.import
+       90  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/autoadvance_indicator.gd.remap
+       79  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/animations.gd.remap
+     6785  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/vn_textbox_layer.gdc
+       85  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/vn_textbox_layer.gd.remap
+      120  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/vn_textbox_name_label_panel.tres.remap
+      424  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/autoadvance_indicator.gdc
+      117  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/vn_textbox_default_panel.tres.remap
+     2123  2026-02-03 20:29   dialogue/custom_styles/VisualNovelTextbox/animations.gdc
+      468  2026-02-03 20:29   dialogue/custom_styles/SimpleTextInputBox/text_input_layer.gdc
+      121  2026-02-03 20:29   dialogue/custom_styles/SimpleTextInputBox/custom_simple_text_input_box.tscn.remap
+       85  2026-02-03 20:29   dialogue/custom_styles/SimpleTextInputBox/text_input_layer.gd.remap
+      104  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/hover_style.tres.remap
+       73  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/choices.gd.remap
+      104  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/focus_style.tres.remap
+      116  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/custom_centered_choices.tscn.remap
+      106  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/pressed_style.tres.remap
+     3332  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/vn_choice_layer.gdc
+      674  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/choices.gdc
+       81  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/vn_choice_layer.gd.remap
+      105  2026-02-03 20:29   dialogue/custom_styles/CenteredChoices/normal_style.tres.remap
+      115  2026-02-03 20:29   dialogue/custom_styles/FullBackground/custom_full_background.tscn.remap
+     1903  2026-02-03 20:29   dialogue/custom_styles/FullBackground/display.gdc
+      112  2026-02-03 20:29   dialogue/custom_styles/FullBackground/full_background_layer.gdc
+       81  2026-02-03 20:29   dialogue/custom_styles/FullBackground/animation_player.gd.remap
+      538  2026-02-03 20:29   dialogue/custom_styles/FullBackground/animation_player.gdc
+       86  2026-02-03 20:29   dialogue/custom_styles/FullBackground/full_background_layer.gd.remap
+       72  2026-02-03 20:29   dialogue/custom_styles/FullBackground/display.gd.remap
+      113  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/custom_default_style.tscn.remap
+      433  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/auto_skip.gdc
+      656  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/default_layout_base.gdc
+       78  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/auto_skip.gd.remap
+      744  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/tutorial.gdc
+       88  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/default_layout_base.gd.remap
+       77  2026-02-03 20:29   dialogue/custom_styles/CustomDefaultStyle/tutorial.gd.remap
+        0  2026-11-18 03:06   dialogue/custom_styles/Battle/CenteredChoices/
+      111  2026-02-03 20:29   dialogue/custom_styles/5Portraits/custom_5_portraits.tscn.remap
+       78  2026-02-03 20:29   dialogue/custom_styles/5Portraits/vn_portrait_layer.gd.remap
+      447  2026-02-03 20:29   dialogue/custom_styles/5Portraits/vn_portrait_layer.gdc
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/Decorations/ChokerListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/Decorations/CatEarsListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/Decorations/CatEarsBackListener.cs
+        1  2026-02-03 20:29   scripts/NightSequence/AreaListeners/Decorations/SocksListener.cs
+     3332  2026-02-03 20:29   dialogue/custom_styles/Battle/CenteredChoices/vn_choice_layer.gdc
+      116  2026-02-03 20:29   dialogue/custom_styles/Battle/CenteredChoices/custom_centered_choices.tscn.remap
+       88  2026-02-03 20:29   dialogue/custom_styles/Battle/CenteredChoices/vn_choice_layer.gd.remap
+---------                     -------
+   477775                     339 files
 
-=== TARGET STRING SEARCH ===
-No target strings found in DEX or cl.zip contents.
+=== FILE TYPES IN sdr.zip ===
+sdr-unpacked/resources.arsc:                                                                    Android package resource table (ARSC), 200 string(s)
+sdr-unpacked/scripts/GalleryButton.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/VolumeAdjustor.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/StaminaTracker.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/NightSequence/NightSequence.cs:                                            very short file (no magic)
+sdr-unpacked/scripts/NightSequence/BuildupTracker.cs:                                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Door.cs:                                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/FlyBody.cs:                                        very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Minigames.cs:                                      very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Timing.cs:                                         very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Tracing.cs:                                        very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Plush.cs:                                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Tissues.cs:                                        very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Dialogue.cs:                                       very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Thermostat.cs:                                     very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/FlySwatter.cs:                                     very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Cleanup.cs:                                        very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Phone.cs:                                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/FlySpray.cs:                                       very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Minigames/Fly.cs:                                            very short file (no magic)
+sdr-unpacked/scripts/NightSequence/SantaHat.cs:                                                 very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Cabinet.cs:                                                  very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Interactions/InteractionDisabler.cs:                         very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Interactions/InteractionCancel.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Interactions/Interaction.cs:                                 very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Interactions/InteractionManager.cs:                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/BoxItem.cs:                                                  very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/Decorations/ChokerListener.cs:                 very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/Decorations/CatEarsBackListener.cs:            very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/Decorations/SocksListener.cs:                  very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/Decorations/CatEarsListener.cs:                very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/LegsListener.cs:                               very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/Kaede.cs:                                      very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/CrotchListener.cs:                             very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/NippleRightListener.cs:                        very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/MouthListener.cs:                              very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/HeadListener.cs:                               very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/BodyAnimation.cs:                              very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/BedsheetsListener.cs:                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/HairFrontListener.cs:                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/LegsHandListener.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/ChestListener.cs:                              very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/EyebrowsListener.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/BraListener.cs:                                very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/TopListener.cs:                                very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/EyesSideListener.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/NippleLeftListener.cs:                         very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/CrownListener.cs:                              very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/PositionListener.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/EyesListener.cs:                               very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/LeftArmListener.cs:                            very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/RightArmListener.cs:                           very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/PantiesListener.cs:                            very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/TorsoListener.cs:                              very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/EyebrowsSideListener.cs:                       very short file (no magic)
+sdr-unpacked/scripts/NightSequence/AreaListeners/FaceListener.cs:                               very short file (no magic)
+sdr-unpacked/scripts/NightSequence/PleasureTracker.cs:                                          very short file (no magic)
+sdr-unpacked/scripts/NightSequence/WakefulnessTracker.cs:                                       very short file (no magic)
+sdr-unpacked/scripts/NightSequence/EventManager.cs:                                             very short file (no magic)
+sdr-unpacked/scripts/NightSequence/Box.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Calendar.cs:                                                               very short file (no magic)
+sdr-unpacked/scripts/Decorations.cs:                                                            very short file (no magic)
+sdr-unpacked/scripts/PointDescription.cs:                                                       very short file (no magic)
+sdr-unpacked/scripts/ButtonHint.cs:                                                             very short file (no magic)
+sdr-unpacked/scripts/Randomizer.cs:                                                             very short file (no magic)
+sdr-unpacked/scripts/TimerNight.cs:                                                             very short file (no magic)
+sdr-unpacked/scripts/Bitmask.cs:                                                                very short file (no magic)
+sdr-unpacked/scripts/Weather.cs:                                                                very short file (no magic)
+sdr-unpacked/scripts/Body.cs:                                                                   very short file (no magic)
+sdr-unpacked/scripts/Window.cs:                                                                 very short file (no magic)
+sdr-unpacked/scripts/QueueFreeOnAndroid.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Bodies.cs:                                                                 very short file (no magic)
+sdr-unpacked/scripts/TranslateLabel.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/Translations/TranslateLineEdit.cs:                                         very short file (no magic)
+sdr-unpacked/scripts/Translations/TranslateCheckbox.cs:                                         very short file (no magic)
+sdr-unpacked/scripts/Translations/TranslateLinkButton.cs:                                       very short file (no magic)
+sdr-unpacked/scripts/DisableShader.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Cooking/Implement.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Cooking/Ingredient.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Cooking/Recipes.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Cooking/Serving.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Cooking/CuttingBoard.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Cooking/Shelf.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Cooking/Stove.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Cooking/Fridge.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/Cooking/Rating.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/Cooking/Cooking.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Cooking/TimerKitchen.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Cooking/CuttableIngredient.cs:                                             very short file (no magic)
+sdr-unpacked/scripts/Cooking/Portrait.cs:                                                       very short file (no magic)
+sdr-unpacked/scripts/Cooking/PortraitYuna.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Cooking/Garbage.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Cooking/GratableIngredient.cs:                                             very short file (no magic)
+sdr-unpacked/scripts/Cooking/Sink.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/Cooking/Oven.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/Cooking/KnifeSet.cs:                                                       very short file (no magic)
+sdr-unpacked/scripts/Cooking/Blender_Top.cs:                                                    very short file (no magic)
+sdr-unpacked/scripts/Cooking/RecipeBox.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Cooking/Dish.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/Cursor.cs:                                                                 very short file (no magic)
+sdr-unpacked/scripts/Finishes.cs:                                                               very short file (no magic)
+sdr-unpacked/scripts/Cutscenes.cs:                                                              very short file (no magic)
+sdr-unpacked/scripts/Gallery.cs:                                                                very short file (no magic)
+sdr-unpacked/scripts/Effects/HoverOpacity.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Effects/HoverSound.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Effects/ClickVisible.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Effects/Exit.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/Effects/ClickInvisible.cs:                                                 very short file (no magic)
+sdr-unpacked/scripts/Effects/HoverBackground.cs:                                                very short file (no magic)
+sdr-unpacked/scripts/Effects/HoverGlow.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Effects/ClickSound.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Main.cs:                                                                   very short file (no magic)
+sdr-unpacked/scripts/Visual/Doorlight.cs:                                                       very short file (no magic)
+sdr-unpacked/scripts/Visual/VHS.cs:                                                             very short file (no magic)
+sdr-unpacked/scripts/Visual/Lighting.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Visual/Camera.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Visual/HotAir.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Visual/Warp.gdshader:                                                      ASCII text
+sdr-unpacked/scripts/Visual/Warp.cs:                                                            very short file (no magic)
+sdr-unpacked/scripts/UpgradeCameraButton.cs:                                                    very short file (no magic)
+sdr-unpacked/scripts/EditorOnly.cs:                                                             very short file (no magic)
+sdr-unpacked/scripts/BonusManager.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/Version.cs:                                                                very short file (no magic)
+sdr-unpacked/scripts/Hint.cs:                                                                   very short file (no magic)
+sdr-unpacked/scripts/Browsers/Statistic.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Browsers/DisplayItem.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Browsers/Items.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/Browsers/Shop.cs:                                                          very short file (no magic)
+sdr-unpacked/scripts/Browsers/Statistics.cs:                                                    very short file (no magic)
+sdr-unpacked/scripts/Browsers/StatusEffects.cs:                                                 very short file (no magic)
+sdr-unpacked/scripts/Browsers/Upgrades.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Browsers/Popup.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/Browsers/PeepTube.cs:                                                      very short file (no magic)
+sdr-unpacked/scripts/Browsers/StatisticSocial.cs:                                               very short file (no magic)
+sdr-unpacked/scripts/Audio/Audio.cs:                                                            very short file (no magic)
+sdr-unpacked/scripts/Audio/AudioNightSequence.cs:                                               very short file (no magic)
+sdr-unpacked/scripts/Screens/Cursors.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/Screens/SettingsUI.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Screens/Cutscene.gdc:                                                      data
+sdr-unpacked/scripts/Screens/CutsceneEffects.gdc:                                               data
+sdr-unpacked/scripts/Screens/TransitionUI.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/Screens/Cutscene.gd.remap:                                                 ASCII text
+sdr-unpacked/scripts/Screens/SummaryScreenUI.cs:                                                very short file (no magic)
+sdr-unpacked/scripts/Screens/MainMenuUI.cs:                                                     very short file (no magic)
+sdr-unpacked/scripts/Screens/UpgradeScreenUI.cs:                                                very short file (no magic)
+sdr-unpacked/scripts/Screens/CutsceneEffects.gd.remap:                                          ASCII text
+sdr-unpacked/scripts/Screens/Cutscene.cs:                                                       very short file (no magic)
+sdr-unpacked/scripts/XRay.cs:                                                                   very short file (no magic)
+sdr-unpacked/scripts/TranslateButton.cs:                                                        very short file (no magic)
+sdr-unpacked/scripts/State/SaveTape.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/State/BattleVariables.gdc:                                                 data
+sdr-unpacked/scripts/State/StateVariables.cs:                                                   very short file (no magic)
+sdr-unpacked/scripts/State/cutscene.gd.remap:                                                   ASCII text
+sdr-unpacked/scripts/State/SaveUI.cs:                                                           very short file (no magic)
+sdr-unpacked/scripts/State/BattleVariables.gd.remap:                                            ASCII text
+sdr-unpacked/scripts/State/game_variables.gdc:                                                  data
+sdr-unpacked/scripts/State/Settings.cs:                                                         very short file (no magic)
+sdr-unpacked/scripts/State/game_variables.gd.remap:                                             ASCII text
+sdr-unpacked/scripts/State/cutscene.gdc:                                                        data
+sdr-unpacked/scripts/State/SaveManager.cs:                                                      very short file (no magic)
+sdr-unpacked/dialogue/custom_styles/SimpleTextInputBox/custom_simple_text_input_box.tscn.remap: ASCII text
+sdr-unpacked/dialogue/custom_styles/SimpleTextInputBox/text_input_layer.gd.remap:               ASCII text
+sdr-unpacked/dialogue/custom_styles/SimpleTextInputBox/text_input_layer.gdc:                    data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_letter.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/yosuke_animation_player.cs:                                 very short file (no magic)
+sdr-unpacked/dialogue/custom_styles/yuna_animation_player.gdc:                                  data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_dildo.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/BattleStyle.tres.remap:                                     ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_yosuke.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/FullBackground/full_background_layer.gdc:                   data
+sdr-unpacked/dialogue/custom_styles/FullBackground/animation_player.gd.remap:                   ASCII text
+sdr-unpacked/dialogue/custom_styles/FullBackground/custom_full_background.tscn.remap:           ASCII text
+sdr-unpacked/dialogue/custom_styles/FullBackground/animation_player.gdc:                        data
+sdr-unpacked/dialogue/custom_styles/FullBackground/full_background_layer.gd.remap:              ASCII text
+sdr-unpacked/dialogue/custom_styles/FullBackground/display.gd.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/FullBackground/display.gdc:                                 data
+sdr-unpacked/dialogue/custom_styles/skill_sound.gd.remap:                                       ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/vn_textbox_name_label_panel.tres.remap:  ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/vn_textbox_layer.gd.remap:               ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/animations.gd.remap:                     ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn.remap:  ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/animations.gdc:                          data
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/vn_textbox_layer.gdc:                    data
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/next.svg.import:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/autoadvance_indicator.gd.remap:          ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/vn_textbox_default_panel.tres.remap:     ASCII text
+sdr-unpacked/dialogue/custom_styles/VisualNovelTextbox/autoadvance_indicator.gdc:               data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_dad.tscn.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_friend.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/Battle.tres.remap:                                          ASCII text
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/tutorial.gd.remap:                       ASCII text
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/tutorial.gdc:                            data
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/auto_skip.gd.remap:                      ASCII text
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/default_layout_base.gd.remap:            ASCII text
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/default_layout_base.gdc:                 data
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/custom_default_style.tscn.remap:         ASCII text
+sdr-unpacked/dialogue/custom_styles/CustomDefaultStyle/auto_skip.gdc:                           data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_enemy_2.tscn.remap:                        ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_box.tscn.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_sister.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_syn.tscn.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_chest.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/enemy_sprite.gdc:                                           data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_random.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/skill_sound.gdc:                                            data
+sdr-unpacked/dialogue/custom_styles/custom_layered_portrait.gd.remap:                           ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_enemy.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_crowd.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/yuna_animation_player.gd.remap:                             ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_phone.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/enemy_sound_player.gd.remap:                                ASCII text
+sdr-unpacked/dialogue/custom_styles/slides.gdc:                                                 data
+sdr-unpacked/dialogue/custom_styles/enemy_animation_player.gdc:                                 data
+sdr-unpacked/dialogue/custom_styles/layered_portrait_decorations.tscn.remap:                    ASCII text
+sdr-unpacked/dialogue/custom_styles/enemy_animation_player.gd.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/custom_layered_portrait.gdc:                                data
+sdr-unpacked/dialogue/custom_styles/DefaultStyle.tres.remap:                                    ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_camera.tscn.remap:                         ASCII text
+sdr-unpacked/dialogue/custom_styles/slides.gd.remap:                                            ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_steam.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/5Portraits/custom_5_portraits.tscn.remap:                   ASCII text
+sdr-unpacked/dialogue/custom_styles/5Portraits/vn_portrait_layer.gdc:                           data
+sdr-unpacked/dialogue/custom_styles/5Portraits/vn_portrait_layer.gd.remap:                      ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_mom.tscn.remap:                            ASCII text
+sdr-unpacked/dialogue/custom_styles/enemy_sprite.gd.remap:                                      ASCII text
+sdr-unpacked/dialogue/custom_styles/layered_portrait_alice.tscn.remap:                          ASCII text
+sdr-unpacked/dialogue/custom_styles/enemy_sound_player.gdc:                                     data
+sdr-unpacked/dialogue/custom_styles/yosuke_animation_player.gdc:                                data
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/hover_style.tres.remap:                     ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/choices.gdc:                                data
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/focus_style.tres.remap:                     ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/choices.gd.remap:                           ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/custom_centered_choices.tscn.remap:         ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/vn_choice_layer.gdc:                        data
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/normal_style.tres.remap:                    ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/vn_choice_layer.gd.remap:                   ASCII text
+sdr-unpacked/dialogue/custom_styles/CenteredChoices/pressed_style.tres.remap:                   ASCII text
+sdr-unpacked/dialogue/custom_styles/Battle/CenteredChoices/custom_centered_choices.tscn.remap:  ASCII text
+sdr-unpacked/dialogue/custom_styles/Battle/CenteredChoices/vn_choice_layer.gdc:                 data
+sdr-unpacked/dialogue/custom_styles/Battle/CenteredChoices/vn_choice_layer.gd.remap:            ASCII text
+sdr-unpacked/dialogue/custom_styles/yosuke_animation_player.gd.remap:                           ASCII text
+sdr-unpacked/dialogue/characters/portrait_animated_sprite.gdc:                                  data
+sdr-unpacked/dialogue/characters/syn.dch:                                                       ASCII text
+sdr-unpacked/dialogue/characters/decorations.dch:                                               ASCII text
+sdr-unpacked/dialogue/characters/roommate.dch:                                                  ASCII text
+sdr-unpacked/dialogue/characters/scene.dch:                                                     ASCII text
+sdr-unpacked/dialogue/characters/frame_sound.gd.remap:                                          ASCII text
+sdr-unpacked/dialogue/characters/crowd.dch:                                                     ASCII text
+sdr-unpacked/dialogue/characters/custom_layered_portrait.gd.remap:                              ASCII text
+sdr-unpacked/dialogue/characters/chest.dch:                                                     ASCII text
+sdr-unpacked/dialogue/characters/camera.dch:                                                    ASCII text
+sdr-unpacked/dialogue/characters/portrait_animated_sprite.gd.remap:                             ASCII text
+sdr-unpacked/dialogue/characters/frame_sound.gdc:                                               data
+sdr-unpacked/dialogue/characters/custom_layered_portrait.gdc:                                   data
+sdr-unpacked/dialogue/characters/enemy_2.dch:                                                   ASCII text
+sdr-unpacked/dialogue/characters/layered_portrait_scene.tscn.remap:                             ASCII text
+sdr-unpacked/dialogue/characters/random.dch:                                                    ASCII text
+sdr-unpacked/dialogue/characters/manager.dch:                                                   ASCII text
+sdr-unpacked/dialogue/characters/enemy.dch:                                                     ASCII text
+sdr-unpacked/dialogue/characters/protagonist.dch:                                               ASCII text
+sdr-unpacked/dialogue/characters/friend.dch:                                                    ASCII text
+sdr-unpacked/dialogue/characters/alice.dch:                                                     ASCII text
+sdr-unpacked/dialogue/timelines/event_relationship_80.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/party_event_evening_kan_room.dtl:                               ASCII text
+sdr-unpacked/dialogue/timelines/party_event_afternoon_cop.dtl:                                  ASCII text
+sdr-unpacked/dialogue/timelines/stat_change.dtl:                                                ASCII text
+sdr-unpacked/dialogue/timelines/party_event_afternoon_twister.dtl:                              ASCII text
+sdr-unpacked/dialogue/timelines/morning_tv.dtl:                                                 ASCII text
+sdr-unpacked/dialogue/timelines/morning_mini_avoidkan.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/adventure.dtl:                                                  ASCII text
+sdr-unpacked/dialogue/timelines/event_rewind.dtl:                                               ASCII text
+sdr-unpacked/dialogue/timelines/adventure_backgrounds.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/event_relationship_100.dtl:                                     ASCII text
+sdr-unpacked/dialogue/timelines/party_intro.dtl:                                                ASCII text
+sdr-unpacked/dialogue/timelines/adventure_checkpoint_level_2.dtl:                               ASCII text
+sdr-unpacked/dialogue/timelines/morning_study.dtl:                                              ASCII text
+sdr-unpacked/dialogue/timelines/event_relationship_40.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/event_rent.dtl:                                                 ASCII text
+sdr-unpacked/dialogue/timelines/event_relationship_20.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/party_event_morning_alcohol.dtl:                                ASCII text
+sdr-unpacked/dialogue/timelines/party_event_morning_pizza.dtl:                                  ASCII text
+sdr-unpacked/dialogue/timelines/adventure_checkpoint_level_1.dtl:                               ASCII text
+sdr-unpacked/dialogue/timelines/adventure_sex.dtl:                                              ASCII text
+sdr-unpacked/dialogue/timelines/morning_shower.dtl:                                             ASCII text
+sdr-unpacked/dialogue/timelines/kitchen.dtl:                                                    ASCII text
+sdr-unpacked/dialogue/timelines/party_event_afternoon_punch.dtl:                                ASCII text
+sdr-unpacked/dialogue/timelines/party_event_morning_shots.dtl:                                  ASCII text
+sdr-unpacked/dialogue/timelines/morning_mini_meetfriend.dtl:                                    ASCII text
+sdr-unpacked/dialogue/timelines/adventure_event.dtl:                                            ASCII text
+sdr-unpacked/dialogue/timelines/adventure_checkpoint_level_3.dtl:                               ASCII text
+sdr-unpacked/dialogue/timelines/night_living_room.dtl:                                          ASCII text
+sdr-unpacked/dialogue/timelines/adventure_calculations.dtl:                                     ASCII text
+sdr-unpacked/dialogue/timelines/z_functions.dtl:                                                ASCII text
+sdr-unpacked/dialogue/timelines/adventure_battle.dtl:                                           ASCII text
+sdr-unpacked/dialogue/timelines/party_event_evening_strip_games.dtl:                            ASCII text
+sdr-unpacked/dialogue/timelines/night.dtl:                                                      ASCII text
+sdr-unpacked/dialogue/timelines/morning.dtl:                                                    ASCII text
+sdr-unpacked/dialogue/timelines/yosuke.dch:                                                     ASCII text
+sdr-unpacked/dialogue/timelines/ending.dtl:                                                     ASCII text
+sdr-unpacked/dialogue/timelines/party_checkpoints.dtl:                                          ASCII text
+sdr-unpacked/dialogue/timelines/adventure_shop_level_2.dtl:                                     Unicode text, UTF-8 text
+sdr-unpacked/dialogue/timelines/class.dtl:                                                      ASCII text
+sdr-unpacked/dialogue/timelines/party_ending.dtl:                                               ASCII text
+sdr-unpacked/dialogue/timelines/adventure_skills.dtl:                                           ASCII text
+sdr-unpacked/dialogue/timelines/event_relationship_60.dtl:                                      ASCII text
+sdr-unpacked/dialogue/timelines/sounds.dtl:                                                     ASCII text
+sdr-unpacked/dialogue/timelines/morning_mini_unlockdoor.dtl:                                    ASCII text
+sdr-unpacked/dialogue/timelines/party_event_evening_beer_pong.dtl:                              ASCII text
+sdr-unpacked/dialogue/timelines/adventure_shop_level_1.dtl:                                     Unicode text, UTF-8 text
+sdr-unpacked/dialogue/timelines/intro.dtl:                                                      ASCII text
+sdr-unpacked/dialogue/timelines/adventure_functions.dtl:                                        ASCII text
+sdr-unpacked/dialogue/timelines/night_yosuke.dtl:                                               ASCII text
+sdr-unpacked/dialogue/timelines/event_rewind_final.dtl:                                         ASCII text
+\n=== TARGET STRING SEARCH ===\nFILE: sdr-unpacked/dialogue/timelines/event_relationship_100.dtl\nMATCHES: Night Sequence\n\nFILE: sdr-unpacked/dialogue/timelines/night.dtl\nMATCHES: night_sequence\n\nFILE: sdr-unpacked/dialogue/timelines/night_living_room.dtl\nMATCHES: night_sequence\n\nFILE: sdr-unpacked/dialogue/timelines/party_checkpoints.dtl\nMATCHES: night_sequence\n\nFILE: sdr-unpacked/dialogue/timelines/party_ending.dtl\nMATCHES: Night Sequence, night_sequence\n\nFILE: sdr-unpacked/dialogue/timelines/z_functions.dtl\nMATCHES: night_sequence\n\n
