@@ -1,10 +1,11 @@
-name: Analyze DEX and cl.zip contents
+name: Analyze game files
 on:
   workflow_dispatch:
   push:
     paths:
       - "classes*.dex"
       - "cl.zip"
+      - "sdr.zip"
       - ".github/workflows/dex-analysis.yml"
 
 permissions:
@@ -44,11 +45,11 @@ jobs:
           POM
           mvn -q dependency:copy-dependencies -DoutputDirectory=target/dependency
 
-      - name: Disassemble DEX and inspect cl.zip
+      - name: Inspect DEX and uploaded archives
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p smali-work result cl-unpacked
+          mkdir -p smali-work result cl-unpacked sdr-unpacked
           shopt -s nullglob
           for dex in classes*.dex; do
             name="${dex%.dex}"
@@ -56,26 +57,36 @@ jobs:
             java -cp "target/dependency/*" org.jf.baksmali.Main disassemble "$dex" -o "smali-work/$name"
           done
 
-          if [ -f cl.zip ]; then
-            echo "=== cl.zip archive listing ===" > result/analysis.txt
-            unzip -l cl.zip >> result/analysis.txt
-            unzip -oq cl.zip -d cl-unpacked
-            echo >> result/analysis.txt
-            echo "=== cl.zip file types ===" >> result/analysis.txt
-            find cl-unpacked -type f -print0 | xargs -0 -r file >> result/analysis.txt
-          else
-            echo "cl.zip not present" > result/analysis.txt
-          fi
+          {
+            echo "=== UPLOADED ARCHIVE CONTENTS ==="
+            for archive in cl.zip sdr.zip; do
+              if [ -f "$archive" ]; then
+                echo
+                echo "### $archive"
+                unzip -l "$archive"
+              fi
+            done
+          } > result/analysis.txt
+
+          [ ! -f cl.zip ] || unzip -oq cl.zip -d cl-unpacked
+          [ ! -f sdr.zip ] || unzip -oq sdr.zip -d sdr-unpacked
+
+          {
+            echo
+            echo "=== FILE TYPES IN sdr.zip ==="
+            find sdr-unpacked -type f -print0 | xargs -0 -r file | head -n 500
+          } >> result/analysis.txt
 
           python3 - <<'PY'
           from pathlib import Path
-          import re
           needles = [
               b"ROLEXTIME",
               b"Max time during Night Sequence",
               b"Night Sequence",
+              b"max_time",
+              b"night_sequence",
           ]
-          roots = [Path("smali-work"), Path("cl-unpacked")]
+          roots = [Path("smali-work"), Path("cl-unpacked"), Path("sdr-unpacked")]
           out = []
           for root in roots:
               if not root.exists():
@@ -87,32 +98,23 @@ jobs:
                       data = p.read_bytes()
                   except Exception:
                       continue
-                  hits = []
                   variants = [data]
                   for enc in ("utf-16le", "utf-16be"):
                       try:
                           variants.append(data.decode(enc, errors="ignore").encode("utf-8"))
                       except Exception:
                           pass
-                  for needle in needles:
-                      if any(needle.lower() in v.lower() for v in variants):
-                          hits.append(needle.decode("ascii", errors="replace"))
+                  hits = [n.decode("ascii") for n in needles if any(n.lower() in v.lower() for v in variants)]
                   if hits:
                       out.append(f"FILE: {p}")
                       out.append("MATCHES: " + ", ".join(hits))
-                      if p.suffix == ".smali":
-                          out.append(data.decode("utf-8", errors="replace"))
-                      else:
-                          for needle in needles:
-                              pos = data.lower().find(needle.lower())
-                              if pos >= 0:
-                                  chunk = data[max(0,pos-160):pos+len(needle)+240]
-                                  out.append("BYTES: " + repr(chunk))
+                      if p.suffix.lower() in {".gd", ".tscn", ".tres", ".cfg", ".json", ".txt", ".translation", ".csv"}:
+                          out.append(data[:12000].decode("utf-8", errors="replace"))
                       out.append("")
           with Path("result/analysis.txt").open("a", encoding="utf-8") as f:
-              f.write("\n=== TARGET STRING SEARCH ===\n")
-              f.write("\n".join(out) if out else "No target strings found in DEX or cl.zip contents.")
-              f.write("\n")
+              f.write("\\n=== TARGET STRING SEARCH ===\\n")
+              f.write("\\n".join(out) if out else "No target strings found in inspected files.")
+              f.write("\\n")
           print("Inspection complete.")
           PY
 
@@ -132,6 +134,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No analysis changes to commit."
           else
-            git commit -m "Inspect cl.zip and DEX contents"
+            git commit -m "Inspect Godot game assets"
             git push
           fi
