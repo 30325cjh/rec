@@ -24,7 +24,7 @@ jobs:
 
       - name: Download Baksmali
         run: |
-          curl -fL --retry 3 -o baksmali.jar https://repo1.maven.org/maven2/org/smali/baksmali/2.5.2/baksmali-2.5.2.jar
+          curl -fL --retry 3 -o baksmali.jar https://repo1.maven.org/maven2/org/smali/baksmali/2.5.2/baksmali-2.5.2-fat-release.jar
 
       - name: Disassemble DEX files and collect matching classes
         shell: bash
