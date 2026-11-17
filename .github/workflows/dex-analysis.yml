@@ -22,9 +22,26 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Download Baksmali
+      - name: Install Maven and resolve Baksmali dependencies
         run: |
-          curl -fL --retry 3 -o baksmali.jar https://repo1.maven.org/maven2/org/smali/baksmali/2.5.2/baksmali-2.5.2-fat-release.jar
+          sudo apt-get update
+          sudo apt-get install -y maven
+          cat > pom.xml <<'POM'
+          <project xmlns="http://maven.apache.org/POM/4.0.0">
+            <modelVersion>4.0.0</modelVersion>
+            <groupId>local.analysis</groupId>
+            <artifactId>dex-analysis</artifactId>
+            <version>1.0</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.smali</groupId>
+                <artifactId>baksmali</artifactId>
+                <version>2.5.2</version>
+              </dependency>
+            </dependencies>
+          </project>
+          POM
+          mvn -q dependency:copy-dependencies -DoutputDirectory=target/dependency
 
       - name: Disassemble DEX files and collect matching classes
         shell: bash
@@ -41,7 +58,7 @@ jobs:
           for dex in "${dex_files[@]}"; do
             name="${dex%.dex}"
             mkdir -p "smali-work/$name"
-            java -jar baksmali.jar disassemble "$dex" -o "smali-work/$name"
+            java -cp "target/dependency/*" org.jf.baksmali.Main disassemble "$dex" -o "smali-work/$name"
           done
 
           python3 - <<'PY'
