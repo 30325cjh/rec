@@ -1,0 +1,81 @@
+name: Analyze DEX strings and Smali
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "classes*.dex"
+      - ".github/workflows/dex-analysis.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  disassemble-and-extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Download Baksmali
+        run: |
+          curl -fL --retry 3 -o baksmali.jar https://repo1.maven.org/maven2/org/smali/baksmali/2.5.2/baksmali-2.5.2.jar
+
+      - name: Disassemble DEX files and collect matching classes
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p smali-work result
+          shopt -s nullglob
+          dex_files=(classes*.dex)
+          if [ ${#dex_files[@]} -eq 0 ]; then
+            echo "No classes*.dex files found" > result/analysis.txt
+            exit 0
+          fi
+
+          for dex in "${dex_files[@]}"; do
+            name="${dex%.dex}"
+            mkdir -p "smali-work/$name"
+            java -jar baksmali.jar disassemble "$dex" -o "smali-work/$name"
+          done
+
+          python3 - <<'PY'
+          from pathlib import Path
+          needles = ("ROLEXTIME", "Max time during Night Sequence", "Night Sequence")
+          out = []
+          root = Path("smali-work")
+          for p in sorted(root.rglob("*.smali")):
+              try:
+                  s = p.read_text(errors="replace")
+              except Exception:
+                  continue
+              hits = [n for n in needles if n.lower() in s.lower()]
+              if hits:
+                  out.append("=" * 80)
+                  out.append(f"FILE: {p}")
+                  out.append("MATCHES: " + ", ".join(hits))
+                  out.append("=" * 80)
+                  out.append(s)
+                  out.append("")
+          if not out:
+              out.append("No target strings found in disassembled classes.")
+          Path("result/analysis.txt").write_text("\n".join(out), encoding="utf-8")
+          print(f"Collected {len(out)} output sections.")
+          PY
+
+      - name: Commit analysis text to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add result/analysis.txt
+          if git diff --cached --quiet; then
+            echo "No analysis changes to commit."
+          else
+            git commit -m "Add automated DEX Smali analysis"
+            git push
+          fi
