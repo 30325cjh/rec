@@ -1,1 +1,19 @@
-No target strings found in disassembled classes.
+=== cl.zip archive listing ===
+Archive:  cl.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+     2044  2026-02-03 20:29   classes4.dex
+    41232  2026-02-03 20:29   classes3.dex
+   394428  2026-02-03 20:29   classes2.dex
+  5643436  2026-02-03 20:29   classes.dex
+---------                     -------
+  6081140                     4 files
+
+=== cl.zip file types ===
+cl-unpacked/classes4.dex: Dalvik dex file version 035
+cl-unpacked/classes2.dex: Dalvik dex file version 035
+cl-unpacked/classes3.dex: Dalvik dex file version 035
+cl-unpacked/classes.dex:  Dalvik dex file version 035
+
+=== TARGET STRING SEARCH ===
+No target strings found in DEX or cl.zip contents.
