@@ -1,16 +1,17 @@
-name: Analyze DEX strings and Smali
+name: Analyze DEX and cl.zip contents
 on:
   workflow_dispatch:
   push:
     paths:
       - "classes*.dex"
+      - "cl.zip"
       - ".github/workflows/dex-analysis.yml"
 
 permissions:
   contents: write
 
 jobs:
-  disassemble-and-extract:
+  inspect:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -22,10 +23,10 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Install Maven and resolve Baksmali dependencies
+      - name: Install tools and resolve Baksmali
         run: |
           sudo apt-get update
-          sudo apt-get install -y maven
+          sudo apt-get install -y maven unzip file
           cat > pom.xml <<'POM'
           <project xmlns="http://maven.apache.org/POM/4.0.0">
             <modelVersion>4.0.0</modelVersion>
@@ -43,47 +44,85 @@ jobs:
           POM
           mvn -q dependency:copy-dependencies -DoutputDirectory=target/dependency
 
-      - name: Disassemble DEX files and collect matching classes
+      - name: Disassemble DEX and inspect cl.zip
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p smali-work result
+          mkdir -p smali-work result cl-unpacked
           shopt -s nullglob
-          dex_files=(classes*.dex)
-          if [ ${#dex_files[@]} -eq 0 ]; then
-            echo "No classes*.dex files found" > result/analysis.txt
-            exit 0
-          fi
-
-          for dex in "${dex_files[@]}"; do
+          for dex in classes*.dex; do
             name="${dex%.dex}"
             mkdir -p "smali-work/$name"
             java -cp "target/dependency/*" org.jf.baksmali.Main disassemble "$dex" -o "smali-work/$name"
           done
 
+          if [ -f cl.zip ]; then
+            echo "=== cl.zip archive listing ===" > result/analysis.txt
+            unzip -l cl.zip >> result/analysis.txt
+            unzip -oq cl.zip -d cl-unpacked
+            echo >> result/analysis.txt
+            echo "=== cl.zip file types ===" >> result/analysis.txt
+            find cl-unpacked -type f -print0 | xargs -0 -r file >> result/analysis.txt
+          else
+            echo "cl.zip not present" > result/analysis.txt
+          fi
+
           python3 - <<'PY'
           from pathlib import Path
-          needles = ("ROLEXTIME", "Max time during Night Sequence", "Night Sequence")
+          import re
+          needles = [
+              b"ROLEXTIME",
+              b"Max time during Night Sequence",
+              b"Night Sequence",
+          ]
+          roots = [Path("smali-work"), Path("cl-unpacked")]
           out = []
-          root = Path("smali-work")
-          for p in sorted(root.rglob("*.smali")):
-              try:
-                  s = p.read_text(errors="replace")
-              except Exception:
+          for root in roots:
+              if not root.exists():
                   continue
-              hits = [n for n in needles if n.lower() in s.lower()]
-              if hits:
-                  out.append("=" * 80)
-                  out.append(f"FILE: {p}")
-                  out.append("MATCHES: " + ", ".join(hits))
-                  out.append("=" * 80)
-                  out.append(s)
-                  out.append("")
-          if not out:
-              out.append("No target strings found in disassembled classes.")
-          Path("result/analysis.txt").write_text("\n".join(out), encoding="utf-8")
-          print(f"Collected {len(out)} output sections.")
+              for p in sorted(root.rglob("*")):
+                  if not p.is_file():
+                      continue
+                  try:
+                      data = p.read_bytes()
+                  except Exception:
+                      continue
+                  hits = []
+                  variants = [data]
+                  for enc in ("utf-16le", "utf-16be"):
+                      try:
+                          variants.append(data.decode(enc, errors="ignore").encode("utf-8"))
+                      except Exception:
+                          pass
+                  for needle in needles:
+                      if any(needle.lower() in v.lower() for v in variants):
+                          hits.append(needle.decode("ascii", errors="replace"))
+                  if hits:
+                      out.append(f"FILE: {p}")
+                      out.append("MATCHES: " + ", ".join(hits))
+                      if p.suffix == ".smali":
+                          out.append(data.decode("utf-8", errors="replace"))
+                      else:
+                          for needle in needles:
+                              pos = data.lower().find(needle.lower())
+                              if pos >= 0:
+                                  chunk = data[max(0,pos-160):pos+len(needle)+240]
+                                  out.append("BYTES: " + repr(chunk))
+                      out.append("")
+          with Path("result/analysis.txt").open("a", encoding="utf-8") as f:
+              f.write("\n=== TARGET STRING SEARCH ===\n")
+              f.write("\n".join(out) if out else "No target strings found in DEX or cl.zip contents.")
+              f.write("\n")
+          print("Inspection complete.")
           PY
+
+      - name: Upload analysis artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rec-analysis
+          path: result/analysis.txt
+          if-no-files-found: error
+          retention-days: 14
 
       - name: Commit analysis text to repository
         run: |
@@ -93,6 +132,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No analysis changes to commit."
           else
-            git commit -m "Add automated DEX Smali analysis"
+            git commit -m "Inspect cl.zip and DEX contents"
             git push
           fi
